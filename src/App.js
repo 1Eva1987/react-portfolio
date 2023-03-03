@@ -6,23 +6,40 @@ import Home from "./pages/Home";
 import Contacts from "./pages/Contacts";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import projects from "./projects.json";
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/home" element={<Home />}></Route>
-          {/* <Route path="/" element={<Home />}></Route> */}
-          <Route path="/projects" element={<Projects />}></Route>
-          <Route path="/skills" element={<Skills />}></Route>
-          <Route path="/contacts" element={<Contacts />}></Route>
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
-  );
+class App extends React.Component {
+  state = { projects };
+
+  render() {
+    return (
+      <div className="App">
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/home" element={<Home />}></Route>
+            <Route
+              path="/projects"
+              element={this.state.projects.map((project) => {
+                return (
+                  <Projects
+                    image={project.image}
+                    key={project.id}
+                    name={project.name}
+                    description={project.description}
+                  />
+                );
+              })}
+            ></Route>
+            <Route path="/skills" element={<Skills />}></Route>
+            <Route path="/contacts" element={<Contacts />}></Route>
+          </Routes>
+          <Footer />
+        </Router>
+      </div>
+    );
+  }
 }
 
 export default App;

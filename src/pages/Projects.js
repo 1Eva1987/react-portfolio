@@ -1,9 +1,13 @@
 import React from "react";
 
-function Projects() {
+function Projects(props) {
   return (
-    <div>
-      <h1>PROJECTS</h1>;
+    <div className="project screenshot">
+      <div>
+        <img src={props.image} alt="projects image"></img>
+        <h2>{props.name}</h2>
+        <p>{props.description}</p>
+      </div>
     </div>
   );
 }
