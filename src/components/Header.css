@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgb(246, 244, 246);
+  height: 10vh;
 }
 .navLinks a {
   margin-right: 20px;

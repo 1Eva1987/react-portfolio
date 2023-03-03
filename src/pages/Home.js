@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/Home.css";
+import "../pages/Home.css";
 
 function Home() {
   return (
@@ -13,6 +13,8 @@ function Home() {
         <p>I'm a Junior Developer</p>
         <p>based in </p>
         <p>North Lincolnshire</p>
+        <p className="question">Want to know more?</p>
+        <p>Fell free to use the links above </p>
       </div>
     </div>
   );

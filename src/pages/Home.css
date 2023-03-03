@@ -6,12 +6,19 @@
     ),
     url("https://img.freepik.com/premium-vector/line-art-girl-with-ponytail-glasses-woman-silhouette-drawn-one-continuous-line-colors_490843-200.jpg?w=360");
   background-repeat: no-repeat;
-  height: 50vh;
+  background-position: center;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+.hello {
+  margin-bottom: 100px;
+}
+.question {
+  margin-top: 20px;
 }
 .home h1 {
   font-size: 3rem;
@@ -24,13 +31,14 @@
   font-size: 3rem;
 }
 .home p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 @media screen and (min-width: 780px) {
   .home {
     background-image: url("https://img.freepik.com/premium-vector/line-art-girl-with-ponytail-glasses-woman-silhouette-drawn-one-continuous-line-colors_490843-200.jpg?w=360");
     background-repeat: no-repeat;
+    background-position: left;
   }
   .hello {
     margin-left: 150px;
