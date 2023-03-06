@@ -30,7 +30,7 @@ function Contacts() {
   };
   return (
     <div className="contacts">
-      <h1>CONTACTS</h1>
+      <h1>Contact Me</h1>
       <div className="contact-me">
         <div className="contact-links">
           <a href="tel:+447397803602">

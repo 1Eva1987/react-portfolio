@@ -11,8 +11,6 @@ h1 {
   justify-content: center;
   flex-wrap: wrap-reverse;
   background-color: rgb(246, 244, 246);
-
-  border-radius: 5px;
   border-radius: 5px;
   box-shadow: 0 3px 10px grey;
 }

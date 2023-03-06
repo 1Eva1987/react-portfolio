@@ -1,3 +1,21 @@
 .skills {
-  height: 85vh;
+  min-height: 85vh;
+}
+.skills-container {
+  background-color: rgb(246, 244, 246);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.skills-container div {
+  margin: 2%;
+  padding: 15px 15px 0 15px;
+  background-color: white;
+  box-shadow: 0 3px 10px grey;
+  border-radius: 5px;
+  font-size: 5rem;
 }
