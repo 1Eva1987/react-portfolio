@@ -1,0 +1,15 @@
+.projects {
+  background-color: rgb(246, 244, 246);
+  text-align: center;
+  width: 40%;
+  min-width: 300px;
+  min-height: 400px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}

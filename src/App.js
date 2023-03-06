@@ -5,9 +5,12 @@ import Skills from "./pages/Skills";
 import Home from "./pages/Home";
 import Contacts from "./pages/Contacts";
 import Footer from "./components/Footer";
+import Wrapper from "./components/Wrapper";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import projects from "./projects.json";
 import React from "react";
+
+import projects from "./projects.json";
 
 class App extends React.Component {
   state = { projects };
@@ -21,16 +24,20 @@ class App extends React.Component {
             <Route path="/home" element={<Home />}></Route>
             <Route
               path="/projects"
-              element={this.state.projects.map((project) => {
-                return (
-                  <Projects
-                    image={project.image}
-                    key={project.id}
-                    name={project.name}
-                    description={project.description}
-                  />
-                );
-              })}
+              element={
+                <Wrapper>
+                  {this.state.projects.map((project) => {
+                    return (
+                      <Projects
+                        image={project.image}
+                        key={project.id}
+                        name={project.name}
+                        description={project.description}
+                      />
+                    );
+                  })}
+                </Wrapper>
+              }
             ></Route>
             <Route path="/skills" element={<Skills />}></Route>
             <Route path="/contacts" element={<Contacts />}></Route>

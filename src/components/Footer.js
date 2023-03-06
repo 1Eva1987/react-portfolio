@@ -4,7 +4,7 @@ import "../components/Footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <p class="f-text">
+      <p className="f-text">
         Made with <span>&hearts;</span> by Ieva Baranauskaite
       </p>
     </div>
