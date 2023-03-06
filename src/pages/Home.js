@@ -14,7 +14,7 @@ function Home() {
         <p>based in </p>
         <p>North Lincolnshire</p>
         <p className="question">Want to know more?</p>
-        <p>Fell free to use the links above </p>
+        <p>Feell free to use the links above </p>
       </div>
     </div>
   );

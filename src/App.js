@@ -21,6 +21,7 @@ class App extends React.Component {
         <Router>
           <Header />
           <Routes>
+            <Route path="/" element={<Home />}></Route>
             <Route path="/home" element={<Home />}></Route>
             <Route
               path="/projects"
@@ -33,6 +34,8 @@ class App extends React.Component {
                         key={project.id}
                         name={project.name}
                         description={project.description}
+                        repo={project.repo}
+                        live={project.live}
                       />
                     );
                   })}
