@@ -1,3 +1,60 @@
 .contacts {
-  height: 85vh;
+  min-height: 85vh;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+.contact-me {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  background-color: rgb(246, 244, 246);
+
+  border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px grey;
+}
+form {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  max-width: 500px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+form p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.contact-links {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact-links a {
+  padding: 10px;
+  font-size: 30px;
+  color: black;
+}
+input {
+  height: 10%;
+  min-width: 60%;
+}
+textarea {
+  min-height: 30%;
+  min-width: 60%;
+}
+.submit {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
