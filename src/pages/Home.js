@@ -1,13 +1,32 @@
 import React from "react";
 import "../pages/Home.css";
+import Typewriter from "typewriter-effect";
 
 function Home() {
   return (
     <div className="home">
       <div className="hello">
-        <h1>
-          <span>Hello,</span>
-        </h1>
+        <div className="type">
+          <Typewriter
+            options={{
+              delay: 150,
+              loop: true,
+            }}
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Hello,")
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString("Пpивeт,")
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString("Labas,")
+                .pauseFor(1000)
+                .start();
+            }}
+          />
+        </div>
+
         <h2>
           My name is <span>Ieva</span>
         </h2>

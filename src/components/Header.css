@@ -9,12 +9,12 @@
   height: 10vh;
 }
 .navLinks a {
-  margin-right: 15px;
+  margin-right: 10px;
   text-decoration: none;
   color: black;
   font-weight: bold;
   font-size: 20px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .navLinks a:hover {
   font-size: 22px;

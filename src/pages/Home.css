@@ -14,14 +14,23 @@
   align-items: center;
   justify-content: center;
 }
+
 .hello {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
+
 .question {
   margin-top: 20px;
 }
-.home h1 span {
-  font-size: 3rem;
+.type {
+  margin-bottom: 20px;
+  font-size: 4rem;
+  font-weight: 600;
   background: linear-gradient(
     to right,
     rgb(109, 1, 109),
@@ -71,21 +80,5 @@
   }
   .hello {
     margin-left: 150px;
-  }
-  .home h1 span {
-    font-size: 4rem;
-  }
-  .home h2 {
-    font-size: 3rem;
-    margin-bottom: 40px;
-  }
-  .home h2 span {
-    font-size: 4rem;
-  }
-  .home p {
-    font-size: 2rem;
-  }
-  .question {
-    margin-top: 40px;
   }
 }
