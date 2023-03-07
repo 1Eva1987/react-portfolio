@@ -20,8 +20,16 @@
 .question {
   margin-top: 20px;
 }
-.home h1 {
+.home h1 span {
   font-size: 3rem;
+  background: linear-gradient(
+    to right,
+    rgb(109, 1, 109),
+    rgb(229, 30, 76),
+    yellow
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .home h2 {
   font-size: 2rem;
@@ -29,10 +37,31 @@
 }
 .home h2 span {
   font-size: 3rem;
+  color: rgb(109, 1, 109);
 }
 .home p {
   font-size: 1.5rem;
   font-weight: bold;
+}
+.question {
+  background: linear-gradient(
+    to right,
+    rgb(109, 1, 109),
+    rgb(229, 30, 76),
+    yellow
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.more span {
+  background: linear-gradient(
+    to right,
+    rgb(109, 1, 109),
+    rgb(229, 30, 76),
+    yellow
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 @media screen and (min-width: 780px) {
   .home {
@@ -43,16 +72,20 @@
   .hello {
     margin-left: 150px;
   }
-  .home h1 {
+  .home h1 span {
     font-size: 4rem;
   }
   .home h2 {
     font-size: 3rem;
+    margin-bottom: 40px;
   }
   .home h2 span {
     font-size: 4rem;
   }
   .home p {
     font-size: 2rem;
+  }
+  .question {
+    margin-top: 40px;
   }
 }

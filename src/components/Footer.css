@@ -1,4 +1,13 @@
 .footer {
   height: 5vh;
   background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-text {
+  letter-spacing: 2px;
+}
+.footer p span {
+  color: red;
 }

@@ -9,7 +9,25 @@
   height: 10vh;
 }
 .navLinks a {
-  margin-right: 20px;
+  margin-right: 15px;
   text-decoration: none;
   color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.navLinks a:hover {
+  font-size: 22px;
+}
+.logo h1 {
+  font-size: 45px;
+  margin: 0 0 0 10px;
+  background: linear-gradient(
+    to right,
+    rgb(109, 1, 109),
+    rgb(229, 30, 76),
+    yellow
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }

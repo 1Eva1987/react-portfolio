@@ -5,7 +5,9 @@ function Home() {
   return (
     <div className="home">
       <div className="hello">
-        <h1>Hello,</h1>
+        <h1>
+          <span>Hello,</span>
+        </h1>
         <h2>
           My name is <span>Ieva</span>
         </h2>
@@ -14,7 +16,9 @@ function Home() {
         <p>based in </p>
         <p>North Lincolnshire</p>
         <p className="question">Want to know more?</p>
-        <p>Feell free to use the links above </p>
+        <p className="more">
+          Feell free to use the <span>LINKS </span>above.
+        </p>
       </div>
     </div>
   );

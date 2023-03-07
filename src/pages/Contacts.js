@@ -30,16 +30,25 @@ function Contacts() {
   };
   return (
     <div className="contacts">
-      <h1>Contact Me</h1>
+      <div className="download">
+        <a className="cv" href="./Images/Ieva.B-CV.pdf" download>
+          Download CV
+        </a>
+        <h2>And</h2>
+        <h2 className="h1">Contact Me</h2>
+      </div>
       <div className="contact-me">
         <div className="contact-links">
-          <a href="tel:+447397803602">
-            <FaPhone className="phone" />
+          <a className="c-icon" href="tel:+447397803602">
+            <FaPhone />
           </a>
-          <a href="https://github.com/1Eva1987">
+          <a className="c-icon" href="https://github.com/1Eva1987">
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/ieva-baranauskaite-096773252">
+          <a
+            className="c-icon"
+            href="https://www.linkedin.com/in/ieva-baranauskaite-096773252"
+          >
             <FaLinkedin />
           </a>
         </div>
